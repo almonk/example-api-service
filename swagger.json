@@ -1,0 +1,56 @@
+{
+  "openapi": "3.0.0",
+  "servers": [
+    {
+      "url": "http://localhost:4567"
+    }
+  ],
+  "info": {
+    "version": "1.0.0",
+    "title": "Calculator",
+    "description": "A bunch of endpoints to simulate a calculator"
+  },
+  "paths": {
+    "/sum": {
+      "get": {
+        "summary": "Add two numbers together",
+        "description": "",
+        "parameters": [
+          {
+            "name": "number1",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "number2",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Respond with sum",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
