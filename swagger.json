@@ -35,7 +35,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Respond with sum",
+            "description": "Respond with calculated sum",
             "content": {
               "application/json": {
                 "schema": {

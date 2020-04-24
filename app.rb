@@ -1,3 +1,4 @@
+# A simple Calculator API
 require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
