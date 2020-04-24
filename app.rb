@@ -9,7 +9,6 @@ configure do
   enable :cross_origin
 end
 
-# Add two numbers together
 get "/sum" do
   a = Integer(params["number1"])
   b = Integer(params["number2"])
